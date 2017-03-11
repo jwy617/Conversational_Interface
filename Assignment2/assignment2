@@ -1,0 +1,28 @@
+1. Stateful chatbots
+1.1	2 turns
+
+1.2	6 turns
+
+1.3	flow-chart file attached named as “task oriented flow-chart”
+	This interaction takes place at home. It’s main function is about setting the 		temperature that the user wants using spoken command.
+
+1.4	file attached named as “fsm-task.html”
+
+1.5	flow-chart attached named as “non-task oriented flow-chart”
+	This interaction is all about entertainment. Having a buddy to cheer you up when 	you are exhausted of any reasons.
+
+1.6	file attached named as “fsm-nontask.html”
+
+
+
+
+
+2. Reading
+
+2.1 	First one is talking-for, which is usually for television talk shows. They talk in a way they believe most viewers who are watching or listening should be able to understand. Second way is talking-to. When people talk to others, they design what they say for the individual people they are speaking to. I this sense, talking-to is a more stringent form of communication than talking-for. Lastly, talking-with is the way people adopt their speech to different audiences. When people talk with others, they engage them in interaction. Taking-with is the strongest communication from among those three. 
+
+2.2 	The main reason for grounding is ”make common,” to establish information as common or shared. For adults, they switch to a style of speaking as child’s language or called child-directed speech. They main thing is they try to track children’s language abilities moment by moment, so they could understand them and interact with each other. For example, when adults speak to children, they raise the pitch of their voice and exaggerate the rises and falls in their pitch. Also, they use special intonation even before infants can understand words. 
+For children, they try to engage in full dialogues in which they use not only speaking, but also gestures like pointing, gazing, touching, pointing, positioning of their bodies, and other signals. Also through these expression, adults feedback is the best way for children to learn how adults speak. For children, the more time they spend in conversations with adults, the earlier and more thoroughly they learn language. 
+
+2.3 I think making a chatbot is ultimately pursuit  a speaking style of taking-with , but now, it is more like the way of talking-to style. Therefore, I could incorporate adults’ ways of achieving grounding in communication, which is switching the style of speaking gear to child’s language or child-directed speech, so I could have more patient when I use the chatbot. Also, I could adopt the way Brenda and her mom’s conversation. Brenda repeated the word fan, revising her pronunciation on each repetition, until her mother confirmed it saying, “Fan! Yeah.”
+
