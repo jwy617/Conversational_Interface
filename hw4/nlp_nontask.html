@@ -62,7 +62,7 @@
                                   // what's inside the array.
 
     if (play_parse_array && state === "initial") {
-      response = "sorry to hear" + play_parse_array[1] + "hope you feel better soon";
+      response = "sorry to hear" + play_parse_array[1] + "hope you feel better soon!";
     } else if (user_said.toLowerCase().includes("tired") && state === "initial") {
       response = "sorry to hear that. how can i cheer you up?";
       state = "feeling"
