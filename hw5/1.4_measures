@@ -5,5 +5,3 @@ True Negative (TN) = 6
 
 Precision = 0.77
 Recall = 0.77
-
---> Need to enrich corpus with more complex examples to make it more realistic.
