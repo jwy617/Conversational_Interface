@@ -1,0 +1,7 @@
+True Positive (TP) = 16
+False Positive (FP) = 2
+False Negative (FN) = 3
+True Negative (TN) = 6
+
+Precision = 0.89
+Recall = 0.84
