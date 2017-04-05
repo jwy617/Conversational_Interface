@@ -57,8 +57,8 @@
     var response;
     // bunch_of_synonyms_re = /(?:show|tell|know|do)\s(.+)/i;
     var play_re1 = /(?:order|place an order|have|buy|ordering|having)\s(.+)/i;  // creating a regular expression
-    var play_re2 = /order\s(.+)\sfrom\s(.+)/i;  // creating a regular expression
-    var play_re3 = /order\s(.+)\sand\s(.+)/i;  // creating a regular expression
+    var play_re2 = /(?:order|place an order|have|buy|ordering|having)\s(.+)\sfrom\s(.+)/i;  // creating a regular expression
+    var play_re3 = /(?:order|place an order|have|buy|ordering|having)\s(.+)\sand\s(.+)/i;  // creating a regular expression
     var play_parse_array1 = user_said.match(play_re1) // parsing the input string with the regular expression
     var play_parse_array2 = user_said.match(play_re2) // parsing the input string with the regular expression
     var play_parse_array3 = user_said.match(play_re3) // parsing the input string with the regular expression
