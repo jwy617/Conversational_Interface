@@ -1,0 +1,30 @@
+TEST 1
+  True Positive (TP) = 10
+  False Positive (FP) = 3
+  False Negative (FN) = 3
+  True Negative (TN) = 6
+
+  Precision = 0.77
+  Recall = 0.77
+
+TEST 2
+  True Positive (TP) = 12
+  False Positive (FP) = 1
+  False Negative (FN) = 3
+  True Negative (TN) = 6
+
+  Precision = 0.92
+  Recall = 0.8
+
+TEST 3
+  True Positive (TP) = 16
+  False Positive (FP) = 2
+  False Negative (FN) = 3
+  True Negative (TN) = 6
+
+  Precision = 0.89
+  Recall = 0.84
+
+
+My final chatbot will be the third one. I think the ideal model should be balanced from each recall and precision, not leaning to one side of aspects. And it test shows a balanced chart, but also toward to the left top of the chart which is a perfect measure area. According to the chart, I would rather pick third result as a final chatbot.
+
