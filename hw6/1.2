@@ -1,0 +1,58 @@
+1.2 Find where in verbal.js the following behaviors are called:
+- jump
+jump();
+
+
+- breath rate increase/decrease
+var slowBreathInc = 0.1
+var fastBreathInc = 0.6
+setBreathInc(slowBreathInc);
+setBreathInc(fastBreathInc); 
+
+
+- blink rate increase/decrease
+var slowTimeBetweenBlinks = 4000
+var fastTimeBetweenBlinks = 500
+setTimeBetweenBlinks(slowTimeBetweenBlinks);
+setTimeBetweenBlinks(fastTimeBetweenBlinks);
+
+
+
+Find in nonverbal.js the implementation of:
+- jump
+function jump() {
+  if (!jumping) {
+	jumping = true;
+	setTimeout(land, 500);
+
+
+- breath rate increase/decrease
+function updateBreath() { 
+  if (breathDir === 1) {  // breath in
+	breathAmt -= breathInc;
+	if (breathAmt < -breathMax) {
+	  breathDir = -1;
+	}
+  } else {  // breath out
+	breathAmt += breathInc;
+	if(breathAmt > breathMax) {
+	  breathDir = 1;
+    
+function setBreathInc(inc) {
+    breathInc = inc;
+
+
+- blink rate increase/decrease
+function updateBlink() { 			
+  eyeOpenTime += blinkUpdateTime;
+  if(eyeOpenTime >= timeBtwBlinks){
+	blink();
+  }
+
+function setTimeBetweenBlinks(duration) {
+    timeBtwBlinks = duration
+
+
+- eye color setting
+function setEyeColor(color) {
+    curEyeColor = color
