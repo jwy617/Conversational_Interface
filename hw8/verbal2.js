@@ -53,7 +53,7 @@ function startDictation() {
  */
 function decide_response(user_said) {
   var response;
-  var play_re = /order|place an order|ordering\s(.+)/i;  // creating a regular expression
+  var play_re = /(?:order|place an order|ordering)\s(.+)/i;  // creating a regular expression
   var play_parse_array = user_said.match(play_re) // parsing the input string with the regular expression
   
   console.log(play_parse_array) // let's print the array content to the console log so we understand 
