@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jumping Snoopy with Woodstock</title>
+    <!--[if IE]><script type="text/javascript" src="excanvas.js"></script><![endif]-->
+
+  </head>
+
+  <body style="background-color:powderblue;">
+  <h1 style="font-size:220%;">
+  <FONT FACE="braggadocio">Jumping Snoopy!
+  </FONT>
+  </h1>
+
+    <div id="canvasDiv"></div>
+    
+    <!-- Search Form -->
+    <form id="labnol" method="get" action="https://www.google.com/search">
+      <div class="speech">
+        <table>
+          <tr>
+            <td>
+              <input type="text" name="q" id="transcript" placeholder="Talk to me in Korean"/>
+            </td>
+            <td>
+              <img onclick="startDictation()" src="//i.imgur.com/cHidSVu.gif" />
+            </td>
+          </tr>
+        </table>
+      </div>
+    </form>
+
+
+
+    <script type="text/javascript" src="nonverbal3.js"></script>
+    <script type="text/javascript" src="verbal3_ko.js"></script>
+    <script type="text/javascript">
+
+    	prepareCanvas(document.getElementById("canvasDiv"), 500, 400);
+		  document.getElementById("canvasDiv").onmousedown = function() { 
+			 jump(); 
+      }
+    </script>
+  
+  </body>
+</html>
