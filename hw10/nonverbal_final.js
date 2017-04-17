@@ -132,18 +132,6 @@ function redraw() {
 
   
 
-  context.strokeStyle="#FFFFFF";
-  context.beginPath();
-  context.moveTo(520, 400);
-  // context.bezierCurveTo(cp1x,cp1y,cp2x,cp2y,x,y);
-  // context.bezierCurveTo(520, 480, 560, 480, 560 ,450);
-    context.bezierCurveTo(520, 420, 550, 420, 550 ,400);
-  context.lineWidth = 2;
-  context.stroke();
-
-  
-  
-
 
   if (jumping) {
 	y -= jumpHeight;
