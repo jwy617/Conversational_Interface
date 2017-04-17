@@ -61,7 +61,7 @@ function decide_response(user_said) {
                                 // what's inside the array.
 
   if (user_said.toLowerCase().includes("kon ni chi wa")) {
-      response = "kon ni chi wa! ta no shi i!!";
+      response = "kon ni chi wa";
 
   } else if (play_parse_array && state === "initial") {
     response = "オーケー" + play_parse_array[1] + "を ちゅうもんする";
