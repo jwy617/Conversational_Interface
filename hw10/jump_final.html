@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jumping Snoopy with Woodstock</title>
+    <!--[if IE]><script type="text/javascript" src="excanvas.js"></script><![endif]-->
+
+  </head>
+
+  <body style="background-color:Khaki;">
+    <div style="color:#FF4500;">
+      <h1 style="font-size:220%; font-family:braggadocio;">Hello, I'm Snoopy!
+      </h1>
+    </div>
+  
+    <div style="color:#FF0000;">
+      <p style="font-size:110%; font-family:Comic Sans MS;">Order anything from me and my frined, Woodstock
+      </p>
+    </div>
+  
+
+    <div id="canvasDiv"></div>
+    
+
+    <!-- Search Form -->
+    <form id="labnol" method="get" action="https://www.google.com/search">
+      <div class="speech">
+        <input type="text" size="64" name="q" id="transcript" placeholder="Click the Microphone on the right and talk to me in English"/>
+        <img onclick="startDictation()" src="mic1.png" width="30" height="30" />
+      </div>
+    </form>
+
+
+    <div style="color:#008B8B;">
+      <p style="font-size:80%; font-family:Comic Sans MS;">_______________designed by Ji Won Yeom_______________
+      </p>
+    </div>
+
+    <script type="text/javascript" src="nonverbal_final.js"></script>
+    <script type="text/javascript" src="verbal_final2.js"></script>
+    <script type="text/javascript">
+
+    	prepareCanvas(document.getElementById("canvasDiv"), 500, 400);
+		  document.getElementById("canvasDiv").onmousedown = function() { 
+			 jump(); 
+      }
+    </script>
+  
+  </body>
+</html>
