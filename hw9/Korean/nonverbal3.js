@@ -65,7 +65,7 @@ function prepareCanvas(canvasDiv, canvasWidth, canvasHeight)
 
 	//load images
 	loadImage("body");
-  loadImage("right_ear");
+        loadImage("right_ear");
 	loadImage("right_hand");
 	loadImage("bird");	
 	loadImage("right_ear_jump");
