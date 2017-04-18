@@ -54,19 +54,19 @@ function startDictation() {
 function decide_response(user_said) {
   var response;
    // bunch_of_synonyms_re = /(?:show|tell|know|do)\s(.+)/i;
-  var play_re = /주문\s(.+)/i;  // creating a regular expression
+  var play_re = /\uC8FC\uBB38\s(.+)/i;  // creating a regular expression
   var play_parse_array = user_said.match(play_re) // parsing the input string with the regular expression
   
   console.log(play_parse_array) // let's print the array content to the console log so we understand 
                                 // what's inside the array.
 
   if (user_said.toLowerCase().includes("스누피")) {
-      response = "안녕 친구!";
+      response = "\uC548\uB155 \uCE5C\uAD6C!";
 
   } else if (play_parse_array && state === "initial") {
-    response = play_parse_array[1] + "주문완료";
+    response = play_parse_array[1] + "\uC8FC\uBB38\uC644\uB8CC";
   
-  } else if (user_said.toLowerCase().includes("안녕")) {
+  } else if (user_said.toLowerCase().includes("\uC548\uB155")) {
     response = "또 봐!";
     state = "initial"
 
