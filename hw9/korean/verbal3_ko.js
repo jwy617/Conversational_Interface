@@ -60,18 +60,18 @@ function decide_response(user_said) {
   console.log(play_parse_array) // let's print the array content to the console log so we understand 
                                 // what's inside the array.
 
-  if (user_said.toLowerCase().includes("스누피")) {
+  if (user_said.toLowerCase().includes("\uC548\uB155 \uC2A4\uB204\uD53C")) {
       response = "\uC548\uB155 \uCE5C\uAD6C!";
 
   } else if (play_parse_array && state === "initial") {
     response = play_parse_array[1] + "\uC8FC\uBB38\uC644\uB8CC";
   
   } else if (user_said.toLowerCase().includes("\uC548\uB155")) {
-    response = "또 봐!";
+    response = "\uB610 \uBD10!";
     state = "initial"
 
   } else {
-    response = "다시말해줄래";
+    response = "\uB2E4\uC2DC \uB9D0\uD574\uC918";
   }
   return response;
 }
