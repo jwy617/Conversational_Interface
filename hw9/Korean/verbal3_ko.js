@@ -60,14 +60,14 @@ function decide_response(user_said) {
   console.log(play_parse_array) // let's print the array content to the console log so we understand 
                                 // what's inside the array.
 
-  if (user_said.toLowerCase().includes("\uC548\uB155 \uC2A4\uB204\uD53C")) {
+  if (user_said.toLowerCase().includes("\uC548\uB155")) {
       response = "\uC548\uB155 \uCE5C\uAD6C!";
 
   } else if (play_parse_array && state === "initial") {
-    response = play_parse_array[1] + "\uC8FC\uBB38\uC644\uB8CC";
+    response = play_parse_array + "\uC8FC\uBB38\uC644\uB8CC";
   
-  } else if (user_said.toLowerCase().includes("\uC548\uB155")) {
-    response = "\uB610 \uBD10!";
+  } else if (user_said.toLowerCase().includes("\uACE0\uB9C8\uC6CC")) {
+    response = "\uD788\uD788\uD788! \uC5B8\uC81C\uB4E0";
     state = "initial"
 
   } else {
@@ -104,7 +104,7 @@ function speak(text, callback) {
   u.text = text;
   u.lang = 'ko';
   u.volume = 1.0 // u.volume = 0.5 //between 0.1
-  u.pitch = 1.0 // u.pitch = 2.0 //between 0 and 2
+  u.pitch = 0.7 // u.pitch = 2.0 //between 0 and 2
   u.rate = 1.0 // u.rate = 1.0 //between 0.1 and 5-ish
   u.voice = speechSynthesis.getVoices().filter(function(voice) { return voice.name == "Google 한국어"; })[0]; 
   // Pick the values of the parameters that you like the best with your conversational agent's character.
