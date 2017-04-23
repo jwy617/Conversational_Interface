@@ -5,6 +5,15 @@ var fastBreathInc = 0.6
 var slowTimeBetweenBlinks = 4000
 var fastTimeBetweenBlinks = 500
 
+var u = new SpeechSynthesisUtterance();
+  u.text = "";
+  u.lang = 'en-US';
+  u.volume = 1.0 // u.volume = 0.5 //between 0.1
+  u.pitch = 0.9 // u.pitch = 2.0 //between 0 and 2
+  u.rate = 0.8 // u.rate = 1.0 //between 0.1 and 5-ish
+  u.voice = speechSynthesis.getVoices().filter(function(voice) { return voice.name == "Google US English"; })[0]; 
+  speechSynthesis.speak(u);
+
 function startDictation() {
 
   if (window.hasOwnProperty('webkitSpeechRecognition')) {
@@ -62,9 +71,10 @@ function decide_response(user_said) {
 
   console.log("play_parse_array = ") 
   console.log(play_parse_array)
+  console.log("state:" + state)
   // let's print the array content to the console log so we understand 
                                 // what's inside the array.
-
+  
   if (user_said.toLowerCase().includes("hello")
     || user_said.toLowerCase().includes("hi")) {
       response = "hi, are you ready to order";
@@ -75,7 +85,7 @@ function decide_response(user_said) {
     state = "ordering"
 
   } else if (play_parse_array && state === "ordering") {
-    response = "okay, ordering" + play_parse_array;
+    response = "okay, ordering" + play_parse_array[1];
     state = "initial"
   
   } else if (user_said.toLowerCase().includes("thank you")
@@ -107,7 +117,7 @@ function printVoices() {
   });
 }
 
-printVoices();
+//printVoices();
 
 
 /* 
@@ -119,13 +129,12 @@ function speak(text, callback) {
   setBreathInc(fastBreathInc); 
 
   console.log("Voices: ")
-  printVoices();
+  //printVoices();
 
-  var u = new SpeechSynthesisUtterance();
   u.text = text;
   u.lang = 'en-US';
   u.volume = 1.0 // u.volume = 0.5 //between 0.1
-  u.pitch = 1.0 // u.pitch = 2.0 //between 0 and 2
+  u.pitch = 0.9 // u.pitch = 2.0 //between 0 and 2
   u.rate = 0.8 // u.rate = 1.0 //between 0.1 and 5-ish
   u.voice = speechSynthesis.getVoices().filter(function(voice) { return voice.name == "Google US English"; })[0]; 
   // Pick the values of the parameters that you like the best with your conversational agent's character.
